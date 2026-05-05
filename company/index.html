@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="О компании РЕКОД: команда, опыт, награды и подход к разработке digital-проектов."
+    />
+    <meta name="keywords" content="" />
+    <title>О компании | РЕКОД</title>
+    <link rel="canonical" href="https://recode-group.ru/company" />
+    <link rel="stylesheet" href="/app/styles/style.min.css" />
+    <link
+      rel="shortcut icon"
+      href="https://recode-group.ru/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <style>
+      .page-static .intro__main {
+        min-height: auto;
+        padding: 0 0 90px;
+      }
+
+      .page-static .intro__main-text {
+        max-width: 860px;
+      }
+
+      .page-static .page-lead {
+        max-width: 780px;
+      }
+
+      .company-logos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 35px;
+      }
+
+      .company-logos__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 88px;
+        padding: 18px 28px;
+        border-radius: 24px;
+        background: #f5f7fb;
+      }
+
+      .company-logos__item img {
+        max-width: 120px;
+        max-height: 44px;
+      }
+
+      .company-about-panel .create__row {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 20px;
+        margin-top: 42px;
+      }
+
+      .company-about-panel .create-item {
+        height: 100%;
+        padding: 28px 24px;
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.14);
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(8px);
+      }
+
+      .company-about-panel .create-item__val,
+      .company-about-panel .create-item__lbl {
+        color: #fff;
+      }
+
+      .company-about-panel .create-item__lbl {
+        color: rgba(255, 255, 255, 0.86);
+      }
+
+      .company-about-panel {
+        padding: 48px 52px;
+        border-radius: 36px;
+        background:
+          linear-gradient(135deg, #005de0 0%, #0b71ff 55%, #3f97ff 100%);
+        box-shadow: 0 24px 60px rgba(0, 93, 224, 0.18);
+      }
+
+      .company-about-panel .h2,
+      .company-about-panel .title-p,
+      .company-about-panel .title-p p,
+      .company-about-panel .title-p b,
+      .company-about-panel .title-p span {
+        color: #fff;
+      }
+
+      .company-about-panel .h2 span {
+        color: rgba(255, 255, 255, 0.72);
+      }
+
+      .company-about-panel .title-p p {
+        max-width: 760px;
+        color: rgba(255, 255, 255, 0.94);
+      }
+
+      .company-metrics .create__column {
+        width: auto;
+      }
+
+      .company-awards-grid,
+      .specialists-grid,
+      .company-process,
+      .company-stack {
+        display: grid;
+        gap: 20px;
+      }
+
+      .company-awards-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .specialists-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .company-process {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .company-stack {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .company-process .stages-item {
+        margin: 0;
+      }
+
+      .company-stack__card {
+        height: 100%;
+        padding: 28px;
+        border-radius: 28px;
+        background: #f5f7fb;
+      }
+
+      .company-stack__title {
+        margin-bottom: 16px;
+      }
+
+      .company-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .company-tags span {
+        display: inline-flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 8px 16px;
+        border: 1px solid rgba(51, 51, 51, 0.12);
+        border-radius: 999px;
+        background: #fff;
+        font:
+          600 14px/1.2 "Raleway",
+          sans-serif;
+      }
+
+      .principles-item__icon {
+        color: #005de0;
+        font:
+          800 30px/1 "Raleway",
+          sans-serif;
+      }
+
+      @media (max-width: 1199px) {
+        .company-about-panel .create__row,
+        .company-stack {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 991px) {
+        .company-awards-grid,
+        .specialists-grid,
+        .company-process {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .page-static .intro__main {
+          padding: 0 0 70px;
+        }
+
+        .company-about-panel {
+          padding: 32px 24px;
+          border-radius: 28px;
+        }
+
+        .company-about-panel .create__row,
+        .company-stack {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="home page-static">
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="ph-top">
+          <div class="container">
+            <div
+              class="page-header__bar d-flex align-items-center justify-content-between"
+            >
+              <div class="ph-logo flex-static">
+                <a href="/" class="h-100 w-100">
+                  <img
+                    src="/public/svg/recode-logo-colored.svg"
+                    width="125"
+                    height="33"
+                    alt="РЕКОД"
+                  />
+                </a>
+              </div>
+              <div class="header__right">
+                <div class="main-navbar">
+                  <nav class="navbar">
+                    <div
+                      class="navbar-collapse collapse"
+                      id="main-navbar-block"
+                      aria-expanded="false"
+                    >
+                      <div class="navbar-block">
+                        <ul class="nav navbar-nav">
+                          <li><a href="/#project">Кейсы</a></li>
+                          <li><a href="/#info">Услуги</a></li>
+                          <li class="active"><a href="/company/">О компании</a></li>
+                          <li><a href="/contacts/">Контакты</a></li>
+                        </ul>
+                        <div class="header__nav-links hidden-md-up">
+                          <a href="tel:+79008001234" class="link"
+                            >+7&nbsp;900&nbsp;800-12-34</a
+                          >
+                          <a
+                            href="mailto:info@recode-group.ru"
+                            class="link title-4"
+                            >info@recode-group.ru</a
+                          >
+                          <a
+                            target="_blank"
+                            href="https://t.me/recode_group"
+                            class="telegram-chat telegram-chat--mobile"
+                          >
+                            <div class="telegram-chat__row">
+                              <div class="telegram-chat__item">
+                                <img
+                                  src="/public/svg/telegram-online-mobile.svg"
+                                  alt="telegram"
+                                />
+                              </div>
+                              <div class="telegram-chat__item">
+                                Чат с руководителем
+                              </div>
+                            </div>
+                          </a>
+                          <div class="header-presentation">
+                            <a
+                              href="/public/Презентация_Рекод.pdf"
+                              download=""
+                              class="header-presentation__download"
+                            >
+                              <span>Презентация</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+                <div class="header-presentation hidden-md-down">
+                  <a
+                    href="/public/Презентация_Рекод.pdf"
+                    download=""
+                    class="header-presentation__download"
+                  >
+                    <span>Презентация</span>
+                  </a>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="navbar hidden-xl-up m-l-15">
+                    <button
+                      type="button"
+                      class="navbar-toggle collapsed menu-toggle"
+                      data-toggle="collapse"
+                      data-target="#main-navbar-block"
+                      aria-expanded="false"
+                    >
+                      <svg
+                        class="svg-icon closed"
+                        width="30"
+                        height="22"
+                        viewBox="0 0 30 22"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M0 1H30" stroke="#333333" stroke-width="2" />
+                        <path d="M0 11H30" stroke="#333333" stroke-width="2" />
+                        <path d="M0 21H30" stroke="#333333" stroke-width="2" />
+                      </svg>
+                      <svg
+                        class="svg-icon open"
+                        width="29"
+                        height="29"
+                        viewBox="0 0 29 29"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 28L28 1M28 28L1 1"
+                          stroke="#333333"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="intro big intro-header-top intro-header-main">
+          <div class="intro__main">
+            <div class="container">
+              <div class="intro__main-text">
+                <h1 class="h1 m-b-20 m-md-b-40">
+                  О компании <br /><span>РЕКОД</span>
+                </h1>
+                <div class="title-5 page-lead">
+                  Мы проектируем и разрабатываем digital-продукты для бизнеса:
+                  корпоративные сайты, сервисы, личные кабинеты, CRM и сложные
+                  внутренние системы. Работаем в формате full-cycle и берём на
+                  себя путь от аналитики до запуска и развития продукта.
+                </div>
+                <div class="company-logos">
+                  <div class="company-logos__item">
+                    <img src="/public/img/runet-color.png" alt="Рейтинг Рунета" />
+                  </div>
+                  <div class="company-logos__item">
+                    <img src="/public/img/vcru-color.png" alt="vc.ru" />
+                  </div>
+                  <div class="company-logos__item">
+                    <img src="/public/img/ruward-color.png" alt="Ruward" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about p-y">
+          <div class="container">
+            <div class="company-about-panel">
+              <div class="f-row">
+                <div class="f-col-12 f-col-lg-4">
+                  <h2 class="h2 m-b-20 m-md-b-40">
+                    Чем полезен <br />
+                    <span>РЕКОД</span>
+                  </h2>
+                </div>
+                <div class="f-col-12 f-col-lg-8">
+                  <div class="title-p">
+                    <p>
+                      Компания РЕКОД входит в реестр аккредитованных ИТ-компаний
+                      Минцифры России и работает с 2011 года. За это время мы
+                      собрали команду, которая умеет запускать проекты с заметной
+                      бизнес-нагрузкой и длинным жизненным циклом.
+                    </p>
+                    <p>
+                      Нам близки задачи, где нужно не просто нарисовать интерфейс
+                      или собрать витрину, а выстроить продуктовую логику,
+                      продумать архитектуру, интеграции и удобные сценарии для
+                      пользователей и команды клиента.
+                    </p>
+                    <p>
+                      Внутри проекта мы соединяем аналитику, UX/UI-дизайн,
+                      frontend и backend-разработку, тестирование, запуск и
+                      дальнейшее развитие. Такой подход позволяет двигаться без
+                      разрывов между этапами и принимать решения быстрее.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="create__row">
+                <div class="create__column">
+                  <div class="create-item">
+                    <div class="create-item__val">65+</div>
+                    <div class="create-item__lbl">реализованных проектов</div>
+                  </div>
+                </div>
+                <div class="create__column">
+                  <div class="create-item">
+                    <div class="create-item__val">2011</div>
+                    <div class="create-item__lbl">год основания</div>
+                  </div>
+                </div>
+                <div class="create__column">
+                  <div class="create-item">
+                    <div class="create-item__val">12+ лет</div>
+                    <div class="create-item__lbl">опыта в разработке</div>
+                  </div>
+                </div>
+                <div class="create__column">
+                  <div class="create-item">
+                    <div class="create-item__val">20+</div>
+                    <div class="create-item__lbl">специалистов в команде</div>
+                  </div>
+                </div>
+                <div class="create__column">
+                  <div class="create-item">
+                    <div class="create-item__val">Full-cycle</div>
+                    <div class="create-item__lbl">от аналитики до развития</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="awards p-y" id="awards">
+          <div class="container">
+            <div class="f-row align-items-end m-b-30 m-md-b-50">
+              <div class="f-col-12 f-col-lg-5">
+                <h2 class="h2 m-b-10 m-md-b-20">Награды и признание</h2>
+                <div class="title-6 font-subtitle">
+                  Отмечены в профильных рейтингах и работаем с компаниями, для
+                  которых важны сроки, качество и прогнозируемый результат.
+                </div>
+              </div>
+            </div>
+            <div class="company-awards-grid">
+              <div class="card-awards">
+                <div class="card-awards__number title"><span>топ</span> 5</div>
+                <div class="card-awards__text">
+                  <div class="title card-awards__top">Рейтинг Рунета</div>
+                  <div class="title-6 font-w-semibold">
+                    Разработка сайтов для бизнеса в Москве
+                  </div>
+                </div>
+              </div>
+              <div class="card-awards">
+                <div class="card-awards__number title"><span>топ</span> 10</div>
+                <div class="card-awards__text">
+                  <div class="title card-awards__top">Ruward</div>
+                  <div class="title-6 font-w-semibold">
+                    Экспертиза в веб-разработке и digital-проектах
+                  </div>
+                </div>
+              </div>
+              <div class="card-awards">
+                <div class="card-awards__number title"><span>топ</span> 12</div>
+                <div class="card-awards__text">
+                  <div class="title card-awards__top">vc.ru</div>
+                  <div class="title-6 font-w-semibold">
+                    Публикации, кейсы и публичная экспертиза команды
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="principles p-y bg-clr-light">
+          <div class="container">
+            <h2 class="h2 principles__title m-b-30 m-md-b-40">
+              Принципы работы
+            </h2>
+            <div class="principles__row">
+              <div class="principles__column">
+                <div class="principles-item">
+                  <div class="principles-item__icon">✓</div>
+                  <div class="principles-item__content">
+                    <p class="principles-item__title">Погружаемся в бизнес</p>
+                    <div class="principles-item__text title-6">
+                      Разбираем цели продукта, процессы компании и ограничения
+                      ещё до старта дизайна и разработки.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="principles__column">
+                <div class="principles-item">
+                  <div class="principles-item__icon">✓</div>
+                  <div class="principles-item__content">
+                    <p class="principles-item__title">Думаем о развитии</p>
+                    <div class="principles-item__text title-6">
+                      Проектируем решения так, чтобы продукт можно было
+                      масштабировать, дорабатывать и интегрировать дальше.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="principles__column">
+                <div class="principles-item">
+                  <div class="principles-item__icon">✓</div>
+                  <div class="principles-item__content">
+                    <p class="principles-item__title">Работаем прозрачно</p>
+                    <div class="principles-item__text title-6">
+                      Фиксируем этапы, сроки, состав команды и регулярно
+                      синхронизируемся с заказчиком по результату.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="principles__column">
+                <div class="principles-item">
+                  <div class="principles-item__icon">✓</div>
+                  <div class="principles-item__content">
+                    <p class="principles-item__title">Не теряем UX</p>
+                    <div class="principles-item__text title-6">
+                      Учитываем пользовательские сценарии, редакторский опыт и
+                      удобство работы с системой после запуска.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="specialist p-y">
+          <div class="container">
+            <h2 class="h2 m-b-30 m-md-b-40">
+              Специалисты, которые работают над <span>вашими проектами</span>
+            </h2>
+            <div class="specialists-grid">
+              <div class="card-specialist">
+                <div class="card-specialist__img object-fit">
+                  <img src="/public/img/24.png" alt="Никита Третьяков" />
+                </div>
+                <div class="card-specialist__main">
+                  <div class="card-specialist__title title">Никита Третьяков</div>
+                  <div class="card-specialist__subtitle title-4">
+                    Frontend-разработчик
+                  </div>
+                </div>
+              </div>
+              <div class="card-specialist">
+                <div class="card-specialist__img object-fit">
+                  <img src="/public/img/04.png" alt="Сергей Зырянов" />
+                </div>
+                <div class="card-specialist__main">
+                  <div class="card-specialist__title title">Сергей Зырянов</div>
+                  <div class="card-specialist__subtitle title-4">
+                    Технический директор
+                  </div>
+                </div>
+              </div>
+              <div class="card-specialist">
+                <div class="card-specialist__img object-fit">
+                  <img src="/public/img/05.png" alt="Юлия Динисламова" />
+                </div>
+                <div class="card-specialist__main">
+                  <div class="card-specialist__title title">
+                    Юлия Динисламова
+                  </div>
+                  <div class="card-specialist__subtitle title-4">
+                    Главный веб-дизайнер
+                  </div>
+                </div>
+              </div>
+              <div class="card-specialist">
+                <div class="card-specialist__img object-fit">
+                  <img src="/public/img/12.png" alt="Константин Судаков" />
+                </div>
+                <div class="card-specialist__main">
+                  <div class="card-specialist__title title">
+                    Константин Судаков
+                  </div>
+                  <div class="card-specialist__subtitle title-4">
+                    Backend-разработчик
+                  </div>
+                </div>
+              </div>
+              <div class="card-specialist">
+                <div class="card-specialist__img object-fit">
+                  <img src="/public/img/08.png" alt="Анастасия Савельева" />
+                </div>
+                <div class="card-specialist__main">
+                  <div class="card-specialist__title title">
+                    Анастасия Савельева
+                  </div>
+                  <div class="card-specialist__subtitle title-4">
+                    Project-менеджер
+                  </div>
+                </div>
+              </div>
+              <div class="card-specialist">
+                <div class="card-specialist__img object-fit">
+                  <img src="/public/img/23.png" alt="Алина Емельянова" />
+                </div>
+                <div class="card-specialist__main">
+                  <div class="card-specialist__title title">
+                    Алина Емельянова
+                  </div>
+                  <div class="card-specialist__subtitle title-4">
+                    Контент-менеджер
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="formats p-y">
+          <div class="container">
+            <div class="formats__body">
+              <h2 class="h2 formats__title m-b-30 m-md-b-40">Форматы работы</h2>
+              <div class="formats__row">
+                <div class="formats__column">
+                  <div class="formats-item">
+                    <p class="formats-item__title">
+                      Фиксированная стоимость <span>(Fixed Price)</span>
+                    </p>
+                    <div class="formats-item__text title-6">
+                      <p>
+                        Подходит для проектов с понятным объёмом работ, заранее
+                        согласованным техническим заданием и фиксированными
+                        сроками запуска.
+                      </p>
+                      <p>
+                        Детализируем этапы, состав команды, бюджет и точки
+                        приёмки до старта работ.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="formats__column">
+                  <div class="formats-item">
+                    <p class="formats-item__title">
+                      Почасовая оплата <span>(Time & Material)</span>
+                    </p>
+                    <div class="formats-item__text title-6">
+                      <p>
+                        Удобна для сложных digital-продуктов, внутренних систем,
+                        MVP и доработок, где объём задач уточняется по ходу
+                        проекта.
+                      </p>
+                      <p>
+                        Даёт гибкость в приоритетах, позволяет быстро проверять
+                        гипотезы и масштабировать команду под текущую нагрузку.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="stages p-y bg-clr-light">
+          <div class="container">
+            <h2 class="h2 m-b-30 m-md-b-50">Этапы работы над проектом</h2>
+            <div class="company-process">
+              <div class="stages-item">
+                <div class="stages-item__column">
+                  <div class="stages-item__num">01</div>
+                </div>
+                <div class="stages-item__column">
+                  <div class="stages-item__descr">
+                    <p class="stages-item__title">Брифинг и аналитика</p>
+                    <ul>
+                      <li>Погружение в бизнес, задачи и аудиторию</li>
+                      <li>Формирование требований и приоритетов</li>
+                      <li>Оценка сроков, рисков и состава команды</li>
+                    </ul>
+                  </div>
+                  <div class="stages-item__members">
+                    <span class="stages-item-subtitle">Участники</span>
+                    <span>Аккаунт, аналитик, проектный менеджер</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stages-item">
+                <div class="stages-item__column">
+                  <div class="stages-item__num">02</div>
+                </div>
+                <div class="stages-item__column">
+                  <div class="stages-item__descr">
+                    <p class="stages-item__title">UX и прототипирование</p>
+                    <ul>
+                      <li>Карта сценариев и информационная архитектура</li>
+                      <li>Прототипы ключевых экранов и пользовательских путей</li>
+                      <li>Согласование логики до старта дизайна</li>
+                    </ul>
+                  </div>
+                  <div class="stages-item__members">
+                    <span class="stages-item-subtitle">Участники</span>
+                    <span>UX/UI дизайнер, аналитик, проектный менеджер</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stages-item">
+                <div class="stages-item__column">
+                  <div class="stages-item__num">03</div>
+                </div>
+                <div class="stages-item__column">
+                  <div class="stages-item__descr">
+                    <p class="stages-item__title">Дизайн и UI-система</p>
+                    <ul>
+                      <li>Визуальная концепция и дизайн-макеты</li>
+                      <li>Компоненты, состояния и адаптивные сценарии</li>
+                      <li>Подготовка к разработке и handoff</li>
+                    </ul>
+                  </div>
+                  <div class="stages-item__members">
+                    <span class="stages-item-subtitle">Участники</span>
+                    <span>Дизайнер, арт-директор, проектный менеджер</span>
+                  </div>
+                </div>
+              </div>
+              <div class="stages-item">
+                <div class="stages-item__column">
+                  <div class="stages-item__num">04</div>
+                </div>
+                <div class="stages-item__column">
+                  <div class="stages-item__descr">
+                    <p class="stages-item__title">Разработка и запуск</p>
+                    <ul>
+                      <li>Frontend, backend и интеграции</li>
+                      <li>Тестирование, отладка и подготовка релиза</li>
+                      <li>Вывод в production и пострелизная поддержка</li>
+                    </ul>
+                  </div>
+                  <div class="stages-item__members">
+                    <span class="stages-item-subtitle">Участники</span>
+                    <span>Разработчики, QA, DevOps, менеджер проекта</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="p-y">
+          <div class="container">
+            <h2 class="h2 m-b-30 m-md-b-40">Технологический стек</h2>
+            <div class="company-stack">
+              <div class="company-stack__card">
+                <div class="title-4 company-stack__title">Frontend</div>
+                <div class="company-tags">
+                  <span>React</span><span>Vue</span><span>Next.js</span
+                  ><span>TypeScript</span><span>HTML/CSS</span>
+                </div>
+              </div>
+              <div class="company-stack__card">
+                <div class="title-4 company-stack__title">Backend</div>
+                <div class="company-tags">
+                  <span>Node.js</span><span>PHP</span><span>Laravel</span
+                  ><span>Yii2</span><span>REST API</span>
+                </div>
+              </div>
+              <div class="company-stack__card">
+                <div class="title-4 company-stack__title">Дизайн и аналитика</div>
+                <div class="company-tags">
+                  <span>Figma</span><span>Miro</span><span>UX research</span
+                  ><span>Прототипы</span>
+                </div>
+              </div>
+              <div class="company-stack__card">
+                <div class="title-4 company-stack__title">Инфраструктура</div>
+                <div class="company-tags">
+                  <span>Docker</span><span>Kubernetes</span><span>GitLab</span
+                  ><span>CI/CD</span><span>Мониторинг</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="bottom" class="footer">
+      <footer class="page-footer">
+        <div class="container">
+          <div class="footer__main p-y-20">
+            <div class="pf-item title-6 font-w">© 2011–2026 РЕКОД</div>
+            <div class="pf-item title-6 font-w">
+              <a href="https://recode-group.ru/politics" target="_blank"
+                >Политика в отношении обработки персональных данных</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="cookies-block" id="cookie-policy">
+      <div class="_container">
+        <div class="cb-content">
+          <div class="cbc-text">
+            Мы используем файлы cookie. Продолжая работу с сайтом, вы
+            соглашаетесь с
+            <a href="https://recode-group.ru/politics" target="_blank"
+              >политикой в отношении обработки персональных данных</a
+            >
+          </div>
+          <button id="accept-cookie" type="button" class="cb-close btn-drop">
+            <div class="btn-drop__icon close">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.6569 1.65685L1.34315 12.9706M12.6569 12.9706L1.34315 1.65685"
+                  stroke="white"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .cookies-block {
+        display: none;
+        position: fixed;
+        right: 0;
+        bottom: 18px;
+        width: 100%;
+        z-index: 2147483999 !important;
+        border-radius: 10px;
+        margin-bottom: 18px;
+        font-family: "Raleway", sans-serif;
+      }
+
+      .cookies-block a {
+        color: #fff;
+        text-decoration: underline;
+      }
+
+      .cookies-block.show {
+        display: block;
+      }
+
+      .cookies-block .cb-content {
+        position: relative;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #005de0;
+        padding: 30px 0;
+        border-radius: 16px;
+        width: 100%;
+      }
+
+      .cookies-block .cb-content .cbc-text {
+        padding-right: 70px;
+        padding-left: 30px;
+        font-weight: 600;
+      }
+
+      .cookies-block .cb-content .cb-close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+
+    <div class="chat-telegram">
+      <a href="https://t.me/recode_group" target="_blank">
+        <img src="/public/svg/telegram.svg" alt="Telegram" />
+      </a>
+    </div>
+
+    <div id="loader"></div>
+
+    <script>
+      (function () {
+        var cookieName = "recode_cookie_consent";
+        var cookieValue = "accepted";
+        var consentBanner = document.getElementById("cookie-policy");
+        var acceptButton = document.getElementById("accept-cookie");
+
+        if (!consentBanner || !acceptButton) return;
+
+        var hasConsent = document.cookie
+          .split("; ")
+          .some(function (entry) {
+            return entry.indexOf(cookieName + "=" + cookieValue) === 0;
+          });
+
+        if (!hasConsent) {
+          consentBanner.classList.add("show");
+        }
+
+        acceptButton.addEventListener("click", function () {
+          var expiresAt = new Date();
+          expiresAt.setFullYear(expiresAt.getFullYear() + 1);
+
+          document.cookie =
+            cookieName +
+            "=" +
+            cookieValue +
+            "; expires=" +
+            expiresAt.toUTCString() +
+            "; path=/; SameSite=Lax";
+
+          consentBanner.classList.remove("show");
+        });
+      })();
+    </script>
+    <script src="/app/scripts/app.min.js"></script>
+    <script>
+      window.jQuery = window.$;
+    </script>
+  </body>
+</html>
