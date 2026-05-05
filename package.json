@@ -3,6 +3,18 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "lint": "npm.cmd run lint:js && npm.cmd run lint:html && npm.cmd run format:check",
+    "lint:fix": "npm.cmd run lint:js:fix && npm.cmd run lint:html && npm.cmd run format",
+    "lint:js": "eslint .",
+    "lint:js:fix": "eslint . --fix",
+    "lint:html": "htmlhint index.html",
+    "format": "prettier --write \"index.html\" \"server.js\" \"package.json\"",
+    "format:check": "prettier --check \"index.html\" \"server.js\" \"package.json\""
+  },
+  "devDependencies": {
+    "eslint": "^9.26.0",
+    "htmlhint": "^1.6.3",
+    "prettier": "^3.5.3"
   }
 }

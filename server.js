@@ -17,7 +17,7 @@ const contentTypes = {
   ".svg": "image/svg+xml",
   ".ico": "image/x-icon",
   ".txt": "text/plain; charset=utf-8",
-  ".webp": "image/webp"
+  ".webp": "image/webp",
 };
 
 function sendFile(filePath, res) {
@@ -27,7 +27,9 @@ function sendFile(filePath, res) {
   fs.readFile(filePath, (error, data) => {
     if (error) {
       const statusCode = error.code === "ENOENT" ? 404 : 500;
-      res.writeHead(statusCode, { "Content-Type": "text/plain; charset=utf-8" });
+      res.writeHead(statusCode, {
+        "Content-Type": "text/plain; charset=utf-8",
+      });
       res.end(statusCode === 404 ? "Not found" : "Internal server error");
       return;
     }
@@ -39,7 +41,8 @@ function sendFile(filePath, res) {
 
 const server = http.createServer((req, res) => {
   const requestPath = decodeURIComponent((req.url || "/").split("?")[0]);
-  const relativePath = requestPath === "/" ? "index.html" : requestPath.replace(/^\/+/, "");
+  const relativePath =
+    requestPath === "/" ? "index.html" : requestPath.replace(/^\/+/, "");
   const filePath = path.normalize(path.join(rootDir, relativePath));
 
   if (!filePath.startsWith(rootDir)) {
