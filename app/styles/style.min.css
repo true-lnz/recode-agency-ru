@@ -32299,9 +32299,9 @@ a:hover {
 }
 .page-header__bar {
   width: 100%;
-  min-height: 75px;
+  min-height: 88px;
   gap: 24px;
-  padding: 8px 22px;
+  padding: 14px 22px;
   border: 1px solid rgba(148, 163, 184, 0.26);
   border-radius: 16px;
   background: linear-gradient(112.83deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.8) 110.84%);
@@ -32316,8 +32316,8 @@ a:hover {
   transition: padding 0.25s ease, transform 0.25s ease, background-color 0.25s ease, -webkit-transform 0.25s ease;
 }
 .page-header.fixed-header .page-header__bar {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   background: linear-gradient(112.83deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.86) 110.84%);
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -32427,8 +32427,8 @@ a:hover {
   background: linear-gradient(81.62deg, #313860 2.25%, #151928 79.87%);
   color: #fff !important;
   font-weight: 600;
-  -webkit-box-shadow: 0 10px 24px rgba(21, 25, 40, 0.22);
-          box-shadow: 0 10px 24px rgba(21, 25, 40, 0.22);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .header-presentation__download:hover {
   background: linear-gradient(81.62deg, #3b4677 2.25%, #1b2136 79.87%);
@@ -32462,7 +32462,8 @@ a:hover {
     padding-top: 14px !important;
   }
   .page-header__bar {
-    padding: 10px 14px;
+    min-height: 76px;
+    padding: 14px 16px;
     border-radius: 16px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -32549,7 +32550,8 @@ a:hover {
 @media (max-width: 767px) {
   .page-header__bar {
     gap: 14px;
-    padding: 10px 12px;
+    min-height: 68px;
+    padding: 12px 12px;
     border-radius: 16px;
   }
   .page-header .ph-logo {

@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js",
+    "dev": "browser-sync start --server --files \"index.html,app/styles/**/*.css,app/scripts/**/*.js,public/**/*\" --host 127.0.0.1 --port 8000 --no-open",
     "lint": "npm.cmd run lint:js && npm.cmd run lint:html && npm.cmd run format:check",
     "lint:fix": "npm.cmd run lint:js:fix && npm.cmd run lint:html && npm.cmd run format",
     "lint:js": "eslint .",
@@ -13,6 +13,7 @@
     "format:check": "prettier --check \"index.html\" \"server.js\" \"package.json\""
   },
   "devDependencies": {
+    "browser-sync": "^3.0.3",
     "eslint": "^9.26.0",
     "htmlhint": "^1.6.3",
     "prettier": "^3.5.3"

@@ -16,12 +16,10 @@
     <meta name="keywords" content="" />
 
     <link rel="stylesheet" href="./app/styles/style.min.css" />
-    <!-- <link rel="icon" href="/images/icons/favicon.ico" type="image/x-icon"> -->
-    <link
-      rel="shortcut icon"
-      href="https://recode-group.ru/images/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="./public/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./public/apple-icon.png" />
+    <link rel="manifest" href="./public/manifest.json" />
     <title>Студия веб дизайна - Рекод | Разработка, создание сайтов</title>
     <link rel="canonical" href="https://recode-group.ru/" />
     <style type="text/css" data-ymaps="css-modules">
@@ -6695,7 +6693,7 @@
                   <div class="application__link m-b-0">
                     <div class="title-4">
                       в офисе по адресу <br />
-                      <b>г. Уфа</b>
+                      <b>г. Москва, ул. Большая Черемушкинская, 34</b>
                     </div>
                   </div>
                 </div>
@@ -7390,7 +7388,7 @@
       </footer>
     </div>
     <!-- Cookies policy -->
-    <div class="cookies-block" id="cookie-policy" style="bottom: -84.0057px">
+    <div class="cookies-block" id="cookie-policy">
       <div class="_container">
         <div class="cb-content">
           <div class="cbc-text">
@@ -7526,6 +7524,7 @@
     <script>
       (function () {
         var cookieName = "recode_cookie_consent";
+        var cookieValue = "accepted";
         var consentBanner = document.getElementById("cookie-policy");
         var acceptButton = document.getElementById("accept-cookie");
 
@@ -7534,7 +7533,7 @@
         var hasConsent = document.cookie
           .split("; ")
           .some(function (entry) {
-            return entry.indexOf(cookieName + "=accepted") === 0;
+            return entry.indexOf(cookieName + "=" + cookieValue) === 0;
           });
 
         if (!hasConsent) {
@@ -7547,7 +7546,9 @@
 
           document.cookie =
             cookieName +
-            "=accepted; expires=" +
+            "=" +
+            cookieValue +
+            "; expires=" +
             expiresAt.toUTCString() +
             "; path=/; SameSite=Lax";
 
